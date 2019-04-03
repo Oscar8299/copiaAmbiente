@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="EjercicioUno.Cuadrado"/>
+<fullyQualifiedTypeName name="EjercicioUno.Triangulo"/>
+<fullyQualifiedTypeName name="ejercicioDos.Raton"/>
+<fullyQualifiedTypeName name="ejercicioDos.Roedores"/>
+<fullyQualifiedTypeName name="EjercicioUno.Figura"/>
+<fullyQualifiedTypeName name="EjercicioUno.Rectangulo"/>
+<fullyQualifiedTypeName name="EjercicioUno.Circulo"/>
+<fullyQualifiedTypeName name="EjercicioUno.iFigura"/>
+<fullyQualifiedTypeName name="EjercicioUno.FiguraGeometrica"/>
+</qualifiedTypeNameHistroy>
