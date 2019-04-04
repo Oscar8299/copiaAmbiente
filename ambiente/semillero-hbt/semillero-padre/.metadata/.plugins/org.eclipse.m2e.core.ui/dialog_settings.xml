@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\copiaAmbiente\ambiente\semillero-hbt\semillero-padre"/>
 			<item value="C:\ambiente\semilleroHBT\ambiente\semillero-hbt\semillero-padre"/>
 		</list>
 		<list key="projectNameTemplate">
