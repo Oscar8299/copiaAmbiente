@@ -1,0 +1,66 @@
+<h2>{{ header }}</h2>
+
+
+
+	<div class="form-group">
+		<form>
+
+		<table>
+			<tr>
+				<td>Tipo de identificación</td>
+				<td>Número de identificación</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input name ="numeroIdentificacion" type = "number"[(ngModel)]= "persona.numeroIdentificacion" placeholder="{{persona.numeroIdentificacion}}"></td>
+			</tr>
+			<tr>
+				<td>Nombres</td>
+				<td>Apellidos</td>
+			</tr>
+			<tr>
+				<td><input name ="nombre" type = "text"[(ngModel)]= "persona.nombre"></td>
+				<td><input name ="apellido" type = "text"[(ngModel)]= "persona.apellido"></td>
+			<tr>
+				<td>id</td>
+				<td>Mayor de edad?</td>
+			</tr>
+			<tr>
+				<td><input name ="id" type = "number"[(ngModel)]= "persona.id"></td>
+				<td><label><input type="checkbox" id="cbox1" value="first_checkbox">Si</label><br>
+
+				<input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">No</label></td>
+			<tr>
+			<tr>
+				<td>Sexo</td>
+				<td>Fecha de nacimiento</td>				
+			</tr>
+			<tr>
+				<td><input type="radio" name="genero" value="femenino">Femenino<input type="radio" name="genero" value="masculino">Masculino</td>
+				<td><input name ="fechaNacimiento" type = "text"[(ngModel)]= "persona.fechaNacimiento" placeholder="dd/mm/aaaa"></td>
+			</tr>
+			<tr><td><input value="Editar" type="submit" (click)="editarPersona()"></td></tr>
+		
+
+		</table>
+		</form>
+	<form>
+	
+	<!--div #empty>no hay contenido></div-->
+    <ul  *ngIf ="personas.length>0; else empty">
+      <li  *ngFor ="let persona  of personas  ">
+        <span>{{persona.id | lowercase}} </span>
+        <span>{{persona.nombre | uppercase}}</span>
+        <span>{{persona.apellido  | uppercase}}</span>
+        <span>{{persona.fechaNacimiento | uppercase}}</span>
+        <span>{{persona.tipoIdentificacion | uppercase}}</span>
+        
+      </li>
+    </ul>
+     <pre>{{ persona | json }}</pre>
+     </form>
+
+</div>	
+
+
+
